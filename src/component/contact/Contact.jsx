@@ -73,7 +73,7 @@ function Contact() {
             <FaGithub size={32} />
           </a>
           <a
-            href="https://linkedin.com/in/AnandGupta"
+            href="https://www.linkedin.com/in/anand-gupta-b88b00261/"
             target="_blank"
             rel="noopener noreferrer"
             title="LinkedIn"
