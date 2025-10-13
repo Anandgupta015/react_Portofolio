@@ -4,6 +4,7 @@ import Home from './component/home/Home'
 import About from './component/about/About'
 import Project from './component/project/Project'
 import Contact from './component/contact/Contact'
+import Certifications from './component/certificatons/Cetrification'
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <Home/>
       <About/>
       <Project/>
+      <Certifications/>
       <Contact/>
     </>
   )

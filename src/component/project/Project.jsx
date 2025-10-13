@@ -8,48 +8,41 @@ const projects = [
     description: "A full-stack MERN app to track personal expenses with analytics.",
     tech: ["React", "Node.js", "MongoDB"],
     img: "/expense.png",
-    github: "https://github.com/Anandgupta015/expense-tracker",
+    github: "https://github.com/Anandgupta015/Expense_Tracker",
     live: "#"
   },
   {
     title: "Portfolio Website",
     description: "Personal portfolio website built with React and Tailwind CSS.",
     tech: ["React", "CSS", "JavaScript"],
-    img: "/portfolio.png",
-    github: "https://github.com/Anandgupta015/portfolio",
+    img: "/image.png",
+    github: "https://github.com/Anandgupta015/react_Portofolio",
     live: "#"
   },
   {
-    title: "Todo App",
-    description: "MERN stack todo app with user authentication and CRUD operations.",
+    title: "BackGround changer",
+    description: "React app to change background dynamically.",
+    tech: ["React"],
+    img: "/todo.png",
+    github: "https://github.com/Anandgupta015/Background-changer",
+    live: "anandgupta015.github.io/Background-changer/"
+  },
+
+    {
+    title: "E-commerse Website",
+    description: "MERN stack with user login and CRUD operations.",
     tech: ["React", "Node.js", "MongoDB"],
     img: "/todo.png",
-    github: "https://github.com/Anandgupta015/ToDo_project_mern",
+    github: "https://github.com/Anandgupta015/e-commerse",
     live: "#"
   },
     {
-    title: "Todo App",
-    description: "MERN stack todo app with user authentication and CRUD operations.",
-    tech: ["React", "Node.js", "MongoDB"],
+    title: "Digital Clock",
+    description: "Html,CSS and JavaScript project",
+    tech: ["HTML", "CSS","JavaScript"],
     img: "/todo.png",
-    github: "https://github.com/Anandgupta015/ToDo_project_mern",
-    live: "#"
-  },
-    {
-    title: "Todo App",
-    description: "MERN stack todo app with user authentication and CRUD operations.",
-    tech: ["React", "Node.js", "MongoDB"],
-    img: "/todo.png",
-    github: "https://github.com/Anandgupta015/ToDo_project_mern",
-    live: "#"
-  },
-    {
-    title: "Todo App",
-    description: "MERN stack todo app with user authentication and CRUD operations.",
-    tech: ["React", "Node.js", "MongoDB"],
-    img: "/todo.png",
-    github: "https://github.com/Anandgupta015/ToDo_project_mern",
-    live: "#"
+    github: "https://github.com/Anandgupta015?tab=repositories",
+    live: "https://anandgupta015.github.io/Digital-clock/"
   }
   
 ];

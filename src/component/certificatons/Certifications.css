@@ -1,0 +1,91 @@
+.cert-section {
+  padding: 80px 20px;
+  background:rgb(73, 73, 86);
+  text-align: center;
+  
+}
+
+.cert-section h2 {
+  font-size: 2.5rem;
+  color: #66fcf1;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.cert-intro {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  color: #c5c6c7;
+}
+
+.cert-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.cert-card {
+  background: #1f2833;
+  width: 230px;
+  height: 230px; /* 👈 makes it square */
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  background: #45a29e;
+  color: #0b0c10;
+}
+
+.cert-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(232, 212, 212);
+}
+
+.cert-card .issuer {
+  font-size: 0.9rem;
+  color: #c5c6c7;
+}
+
+.cert-card .date {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin: 8px 0;
+}
+
+.cert-card a {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #66fcf1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cert-card:hover a {
+  color: #0b0c10;
+}
+
+@media (max-width: 600px) {
+  .cert-card {
+    width: 180px;
+    height: 180px;
+    padding: 15px;
+  }
+
+  .cert-card h3 {
+    font-size: 0.9rem;
+  }
+}

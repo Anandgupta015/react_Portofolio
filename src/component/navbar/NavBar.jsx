@@ -18,6 +18,7 @@ function NavBar() {
         <li><Link to="home" activeClass="active" spy smooth duration={500}>Home</Link></li>
         <li><Link to="about" activeClass="active" spy smooth duration={500}>About</Link></li>
         <li><Link to="project" activeClass="active" spy smooth duration={500}>Project</Link></li>
+            <li><Link to="certifications" activeClass="active" spy smooth duration={500}>Certification</Link></li>
         <li><Link to="contact" activeClass="active" spy smooth duration={500}>Contact</Link></li>
       </ul>
 
@@ -33,6 +34,7 @@ function NavBar() {
         <li><Link onClick={toggleMenu} to="home" activeClass="active" spy smooth duration={500}>Home</Link></li>
         <li><Link onClick={toggleMenu} to="about" activeClass="active" spy smooth duration={500}>About</Link></li>
         <li><Link onClick={toggleMenu} to="project" activeClass="active" spy smooth duration={500}>Project</Link></li>
+            <li><Link onClick={toggleMenu} to="certifications" activeClass="active" spy smooth duration={500}>Certification</Link></li>
         <li><Link onClick={toggleMenu} to="contact" activeClass="active" spy smooth duration={500}>Contact</Link></li>
       </ul>
     </nav>

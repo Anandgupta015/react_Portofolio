@@ -1,44 +1,37 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.send(
-      'YOUR_SERVICE_ID',       // EmailJS service ID
-      'YOUR_TEMPLATE_ID',      // EmailJS template ID
-      formData,
-      'YOUR_PUBLIC_KEY'        // EmailJS public key
-    ).then(
-      (result) => {
-        console.log(result.text);
-        alert("Message sent successfully!");
-        setFormData({ name: "", email: "", message: "" });
-      },
-      (error) => {
-        console.log(error.text);
-        alert("Failed to send message. Try again later.");
-      }
-    );
+    const mailtoLink = `mailto:anandgupta010106@gmail.com?subject=Message from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0AMessage: ${formData.message}`;
+    window.location.href = mailtoLink;
+
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
     <section id="contact" className="contact-section">
-      <h2>Contact Me</h2>
+      <h2>Get In Touch</h2>
+      <p className="contact-intro">
+        Have a project in mind or just want to say hi? Feel free to drop a
+        message — I’ll get back to you as soon as possible.
+      </p>
+
       <div className="contact-container">
+        {/* Form */}
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
@@ -64,13 +57,32 @@ function Contact() {
             rows="5"
             required
           ></textarea>
-          <button type="submit" className="btn-send">Send Message</button>
+          <button type="submit" className="btn-send">
+            Send Message
+          </button>
         </form>
 
+        {/* Social Links */}
         <div className="contact-social">
-          <a href="https://github.com/Anandgupta015" target="_blank" rel="noopener noreferrer"><FaGithub size={30} /></a>
-          <a href="https://linkedin.com/in/AnandGupta" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a>
-          <a href="mailto:anand@example.com"><FaEnvelope size={30} /></a>
+          <a
+            href="https://github.com/Anandgupta015"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="GitHub"
+          >
+            <FaGithub size={32} />
+          </a>
+          <a
+            href="https://linkedin.com/in/AnandGupta"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+          >
+            <FaLinkedin size={32} />
+          </a>
+          <a href="mailto:anandgupta010106@gmail.com" title="Email">
+            <FaEnvelope size={32} />
+          </a>
         </div>
       </div>
     </section>
